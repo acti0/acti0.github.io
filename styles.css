@@ -1,0 +1,111 @@
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #876FED;
+    padding: 20px 1%;
+
+    /* Fixed Header code
+    position: fixed;
+    width: 98%;*/
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #A796F0;
+    margin: 0;
+    height: 100%;
+}
+
+footer {
+    text-align: center;
+    font-weight: 200;
+    margin: 30px;
+}
+
+section {
+    /*background-color: #B06FED;*/
+    max-width: 1200px;
+    margin: 4rem auto;
+}
+
+h1 {
+    font-size: 60px;
+    margin: 0;
+}
+
+h2 {
+    margin: 3rem 0 1rem 0;
+    font-size: 36px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.link {
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0 1rem;
+    color: white;    
+}
+
+.link:hover {
+    color: #D96FED;  
+}
+
+.flex {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.flex-item {
+    width: 30%;
+}
+
+.page-content {
+    flex: 1 0 auto;
+}
+
+.logo {
+    max-height: 50px;
+    max-width: auto;
+    object-fit: contain;
+}
+
+.socials {
+    text-align: right;
+}
+
+.hero {
+    /*background-color: #B06FED;*/
+    background-color: white;
+    text-align: center;
+    padding: 5rem 0;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.center-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+}
+
+.joke {
+    display: inline;
+    font-family: 'Bradley Hand', cursive;
+    font-style: italic;
+    
+    /*Rainbow effect*/
+    background: linear-gradient(90deg, #f00, #ff2b00, #f50, #ff8000, #fa0, #ffd500, #ff0, #d4ff00, #af0, #80ff00, #5f0, #2bff00, #0f0, #00ff2b, #0f5, #00ff80, #0fa, #00ffd5, #0ff, #00d4ff, #0af, #007fff, #05f, #002bff, #00f, #2a00ff, #50f, #7f00ff, #a0f, #d400ff, #f0f, #ff00d4, #f0a, #ff0080, #f05, #ff002b, #f00);
+    background-clip: text;
+    color: #0000;
+}
