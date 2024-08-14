@@ -99,6 +99,26 @@ h2 {
     width: 10%;
 }
 
+.blog-entry {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.blog-entry-content {
+    padding-left: 1rem;
+}
+
+.blog-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog-title h2 {
+    margin: 0;
+    display: inline;
+}
+
 .joke {
     display: inline;
     font-family: 'Bradley Hand', cursive;
