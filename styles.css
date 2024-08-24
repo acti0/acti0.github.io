@@ -67,6 +67,10 @@ h2 {
     width: 30%;
 }
 
+.flex-item-game {
+    width: 50%;
+}
+
 .page-content {
     flex: 1 0 auto;
 }
