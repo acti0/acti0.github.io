@@ -9,9 +9,9 @@ header {
     background-color: #876FED;
     padding: 20px 1%;
 
-    /* Fixed Header code
+    /* Fixed Header code*/
     position: fixed;
-    width: 98%;*/
+    width: 98%;
 }
 
 body {
@@ -46,17 +46,27 @@ h2 {
     text-transform: uppercase;
 }
 
+/*Links*/
+
 .link {
     font-size: 20px;
     font-weight: bold;
     text-decoration: none;
-    padding: 0 1rem;
-    color: white;    
+    margin: 0 0.5rem;
+    color: white;
+    fill:  white;
 }
 
 .link:hover {
     color: #D96FED;  
+    fill: #D96FED;
 }
+
+.link svg {
+    height: 30px;
+}
+
+/*Flexbox*/
 
 .flex {
     display: flex;
@@ -73,7 +83,11 @@ h2 {
 
 .page-content {
     flex: 1 0 auto;
+    /*Offset for header*/
+    margin-top: 3%;
 }
+
+/*Header*/
 
 .logo {
     max-height: 50px;
@@ -84,6 +98,8 @@ h2 {
 .socials {
     text-align: right;
 }
+
+/*Main page*/
 
 .hero {
     /*background-color: #B06FED;*/
@@ -102,6 +118,8 @@ h2 {
     margin-right: auto;
     width: 10%;
 }
+
+/*Blog style layout*/
 
 .blog-entry {
     background-color: white;
