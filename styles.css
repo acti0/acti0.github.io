@@ -109,8 +109,8 @@ h2 {
     flex-flow: column;
     justify-content: center;
     align-items: center;
-    height: 450px;
-    margin-top: -450px;
+    height: 500px;
+    margin-top: -500px;
     color: white;
 }
 
@@ -118,12 +118,31 @@ h2 {
     background: url(img/another_witch_banner.png);
     background-repeat: no-repeat;
     background-clip: border-box;
-    background-position: bottom;
-    background-size: 1920px;
+    background-position: top;
     height: 60vh;
     max-height: 1080px;
     min-height: 200px;
 }
+
+@media (min-width: 1921px) {
+    .hero-image-container {
+        background-size: 2560px;
+    }   
+}
+
+@media (max-width: 1920px) {
+    .hero-image-container {
+        background-size: 1920px;
+    }   
+}
+
+@media (max-width: 1000px) {
+    .hero-image-container {
+        margin-left: calc(60vw - 1800px);
+        background-size: 4000px;
+    }
+}
+
 
 .center-text {
     text-align: center;
