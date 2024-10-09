@@ -20,6 +20,7 @@ body {
     background-color: #A796F0;
     margin: 0;
     height: 100%;
+    font-weight: 400;
 }
 
 footer {
@@ -43,13 +44,38 @@ h1 {
 
 h2 {
     margin: 3rem 0 1rem 0;
-    font-size: 36px;
+    font-size: 2rem;
     font-weight: 500;
     text-transform: lowercase;
     color: green;
 }
 
-/*Links*/
+/*Flexbox*/
+
+.flex {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.flex-item {
+    width: 30%;
+}
+
+.flex-item-game {
+    width: 50%;
+}
+
+/*Header*/
+
+.logo {
+    max-height: 50px;
+    max-width: auto;
+    object-fit: contain;
+}
+
+.socials {
+    text-align: right;
+}
 
 .link {
     font-size: 20px;
@@ -69,40 +95,13 @@ h2 {
     height: 30px;
 }
 
-/*Flexbox*/
-
-.flex {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.flex-item {
-    width: 30%;
-}
-
-.flex-item-game {
-    width: 50%;
-}
+/*Main page*/
 
 .page-content {
     margin: 0 auto;
     padding: 0 2em;
     max-width: 800px;
 }
-
-/*Header*/
-
-.logo {
-    max-height: 50px;
-    max-width: auto;
-    object-fit: contain;
-}
-
-.socials {
-    text-align: right;
-}
-
-/*Main page*/
 
 .hero-text-container {
     display: flex;
@@ -130,19 +129,20 @@ h2 {
     }   
 }
 
+/*Desktop*/
 @media (max-width: 1920px) {
     .hero-image-container {
-        background-size: 1920px;
+        background-size: 2000px;
     }   
 }
 
+/*Mobile*/
 @media (max-width: 1000px) {
     .hero-image-container {
         margin-left: calc(60vw - 1800px);
         background-size: 4000px;
     }
 }
-
 
 .center-text {
     text-align: center;
@@ -155,11 +155,18 @@ h2 {
     min-width: 200px;
 }
 
-/*Blog style layout*/
+/*Sub page layout*/
+
+.sub-page-content {
+    margin: 3% auto 0 auto;
+    padding: 0 2em;
+    max-width: 800px;
+}
 
 .blog-entry {   
     padding: 1rem;
-    border-top: green solid 2px;
+    border-top: green solid 5px;
+    background-color: white;
 }
 
 .blog-entry-content {
@@ -175,6 +182,8 @@ h2 {
     margin: 0 auto 0 0;
     display: inline;
 }
+
+/* Experimental */
 
 .joke {
     display: inline;
