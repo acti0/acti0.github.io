@@ -1,23 +1,65 @@
+
 html {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     height: 100%;
 }
 
-header {
+.out {
+    padding: 2rem 1rem;
+}
+
+.window {
+    border: 5px solid blue;
+    border-radius: 10px 10px 0 0;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.windowtop {
     display: flex;
     justify-content: space-between;
-    background-color: #876FED;
-    padding: 20px 1%;
+    background-color: blue;
+    padding: 8px;
+    border-bottom: 5px solid blue;
+    font-weight: bold;
+}
 
-    /* Fixed Header code*/
-    position: fixed;
-    width: 98%;
+.topnav {
+    background-color: lightpink;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: .5em 10px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: pink;
+  color: white;
+}
+
+/* Create a right-aligned (split) link inside the navigation bar */
+.topnav a.split {
+  float: right;
+  background-color: #04AA6D;
+  color: white;
+  height: auto;
+}
+
+.banner-image {
+    width: 100%;
 }
 
 body {
     display: flex;
     flex-direction: column;
-    background-color: #A796F0;
+    background-color: lightblue;
     margin: 0;
     height: 100%;
     font-weight: 400;
@@ -42,7 +84,7 @@ h1 {
     margin: 0;
 }
 
-h2 {
+section h2 {
     margin: 3rem 0 1rem 0;
     font-size: 2rem;
     font-weight: 500;
@@ -98,27 +140,27 @@ h2 {
 /*Main page*/
 
 .page-content {
-    margin: 0 auto;
-    padding: 0 2em;
-    max-width: 800px;
+    margin: 0 2rem;
+    padding: auto 0;
 }
 
-.hero-text-container {
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-    height: 500px;
-    margin-top: -500px;
+.hero-text-container {    
+    padding: 0 3rem;
     color: white;
 }
 
+.hero-text-container h2 {
+    margin-top: 0;
+}
+
 .hero-image-container {
+    display: flex;
+    align-items: center;
     background: url(img/another_witch_banner.png);
     background-repeat: no-repeat;
     background-clip: border-box;
-    background-position: top;
-    height: 60vh;
+    background-position: 75% 50%;
+    height: 40vh;
     max-height: 1080px;
     min-height: 200px;
 }
@@ -132,15 +174,15 @@ h2 {
 /*Desktop*/
 @media (max-width: 1920px) {
     .hero-image-container {
-        background-size: 2000px;
+        background-size: 1500px;
     }   
 }
 
 /*Mobile*/
 @media (max-width: 1000px) {
     .hero-image-container {
-        margin-left: calc(60vw - 1800px);
-        background-size: 4000px;
+        height: 20vh;
+        background-size: 1000px;
     }
 }
 
@@ -153,7 +195,10 @@ h2 {
     margin: auto;
     width: 10vw;
     min-width: 200px;
-    margin-top: -100px;
+}
+
+.circle {
+    border-radius: 50%;
 }
 
 /*Sub page layout*/
