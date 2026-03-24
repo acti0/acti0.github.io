@@ -18,10 +18,27 @@ html {
 .windowtop {
     display: flex;
     justify-content: space-between;
+    color: white;
     background-color: blue;
     padding: 8px;
     border-bottom: 5px solid blue;
     font-weight: bold;
+}
+
+.windowtop-left {
+    display: flex;
+    gap: 1rem;
+}
+
+.top-icon-image {
+    display: inline;
+    border: 2px solid white;
+    border-radius: 5px;
+    height: 20px;
+}
+
+.push-right {
+    margin-left: auto;
 }
 
 .topnav {
@@ -140,7 +157,7 @@ section h2 {
 /*Main page*/
 
 .page-content {
-    margin: 0 2rem;
+    margin: 1rem 2rem;
     padding: auto 0;
 }
 
@@ -160,7 +177,7 @@ section h2 {
     background-repeat: no-repeat;
     background-clip: border-box;
     background-position: 75% 50%;
-    height: 40vh;
+    height: 30vh;
     max-height: 1080px;
     min-height: 200px;
 }
