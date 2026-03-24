@@ -29,11 +29,13 @@
                     <a href="help.html"><u>H</u>elp</a>
                 </div>
                 <div class="page-content">
-                    <model-viewer src="model/shark.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="0" autoplay exposure="1">
-                        <div class="progress-bar hide" slot="progress-bar">
-                            <div class="update-bar"></div>
-                        </div>
-                    </model-viewer>
+                    <div class="model-container">
+                        <model-viewer src="model/shark.glb" ar ar-modes="webxr scene-viewer quick-look" tone-mapping="neutral" poster="poster.webp" shadow-intensity="0" autoplay exposure="1" camera-orbit="-357.3deg 93.63deg 1.792m" field-of-view="30deg">
+                            <div class="progress-bar hide" slot="progress-bar">
+                                <div class="update-bar"></div>
+                            </div>
+                        </model-viewer>
+                    </div>
                     <h1>:3</h1>
                     <p>Your [redacted] ran into a problem and would like to delete. She's asking very nicely to be uninstalled.</p>
                 </div>

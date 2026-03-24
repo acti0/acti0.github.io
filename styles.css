@@ -156,6 +156,10 @@ section h2 {
     height: 30px;
 }
 
+.model-container model-viewer {
+    margin: 0 auto;
+}
+
 /*Main page*/
 
 .page-content {
