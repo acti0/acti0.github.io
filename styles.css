@@ -159,8 +159,8 @@ section h2 {
 /*Main page*/
 
 .page-content {
-    margin: 1rem 2rem;
-    padding: auto 0;
+    background-color: rgb(255, 216, 245);
+    padding: 1rem 2rem;
 }
 
 .hero-text-container {    
@@ -223,9 +223,8 @@ section h2 {
 /*Sub page layout*/
 
 .sub-page-content {
-    margin: 3% auto 0 auto;
-    padding: 0 2em;
-    max-width: 800px;
+    background-color: rgb(255, 216, 245);
+    padding: 1rem 2rem;
 }
 
 .blog-entry {   

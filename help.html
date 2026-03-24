@@ -3,7 +3,8 @@
     <head>
         <link rel="stylesheet" href="styles.css">
         <link rel="icon" type="image/png" href="img/icon/logo.png">
-        <title>tact // Gallery</title>
+        <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.2.0/model-viewer.min.js"></script>
+        <title>tact // Help</title>
     </head>
     <body>
        <div class="out">
@@ -12,7 +13,7 @@
                     <div class="windowtop-left">
                         <span>
                         <img class="top-icon-image" src="img/icon/close.png" alt=""></span>
-                        <span>Photos</span>
+                        <span>Recycle Bin</span>
                     </div>
                     <div>
                         <img class="top-icon-image" src="img/icon/minimize.png" alt="">
@@ -27,16 +28,14 @@
                     <a href="#"><u>R</u>esources</a>
                     <a href="help.html"><u>H</u>elp</a>
                 </div>
-                <div class="sub-page-content">
-                    <section class="blog-entry">
-                        <div class="blog-title">
-                            <h2>Gallery</h2>
-                            <span>In progress</span>
+                <div class="page-content">
+                    <model-viewer src="model/shark.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="0" autoplay exposure="1">
+                        <div class="progress-bar hide" slot="progress-bar">
+                            <div class="update-bar"></div>
                         </div>
-                        <p>
-                            Hello
-                        </p>
-                    </section>
+                    </model-viewer>
+                    <h1>:3</h1>
+                    <p>Your [redacted] ran into a problem and would like to delete. She's asking very nicely to be uninstalled.</p>
                 </div>
             </div>
         </div>
