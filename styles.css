@@ -160,6 +160,14 @@ section h2 {
     margin: 0 auto;
 }
 
+.speech-bubble {
+    margin: 0 auto;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 10px;
+    max-width: 200px;
+}
+
 /*Main page*/
 
 .page-content {
