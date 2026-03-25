@@ -89,12 +89,12 @@ footer {
     font-weight: 200; 
     font-style: italic;
     margin-top: auto;
+    padding: 0 auto;
 }
 
 section {
     max-width: 1200px;
     margin: 4rem auto;
-
     line-height: 1.75em;
 }
 
@@ -115,7 +115,8 @@ section h2 {
 
 .flex {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    margin: 2rem auto;
 }
 
 .flex-item {
