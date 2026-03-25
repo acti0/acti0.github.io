@@ -271,6 +271,37 @@ section h2 {
     display: inline;
 }
 
+/* Gallery */
+
+.gallery-flex {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 2rem auto;
+}
+
+.polaroid {
+    background-color: white;
+    padding: 1rem;
+}
+
+.polaroid-trim {
+    max-width: 250px;
+    max-height: 200px;
+    overflow: hidden;
+}
+
+.polaroid-trim img {
+    max-width: 250px;
+    height: auto;
+}
+
+.polaroid p {
+    text-align: center;
+    font-size: large;
+}
+
 /* Experimental */
 
 .joke {

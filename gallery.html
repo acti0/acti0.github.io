@@ -28,20 +28,46 @@
                     <a href="help.html"><u>H</u>elp</a>
                 </div>
                 <div class="sub-page-content">
-                    <section class="blog-entry">
-                        <div class="blog-title">
-                            <h2>Gallery</h2>
-                            <span>In progress</span>
+                    <div id="gallery" class="gallery-flex">
+                        <div class="polaroid">
+                            <div class="polaroid-trim">
+                                <img src="img/gwynne_head_square.png" alt="">
+                            </div>
+                            <p>First picture</p>
                         </div>
-                        <p>
-                            Hello
-                        </p>
-                    </section>
+                        <div class="polaroid">
+                            <div class="polaroid-trim">
+                                <img src="img/gwynne_head_square.png" alt="">
+                            </div>
+                            <p>text</p>
+                        </div>
+                        <div class="polaroid">
+                            <div class="polaroid-trim">
+                                <img src="img/gwynne_head_square.png" alt="">
+                            </div>
+                            <p>text</p>
+                        </div>
+                        <div class="polaroid">
+                            <div class="polaroid-trim">
+                                <img src="img/gwynne_head_square.png" alt="">
+                            </div>
+                            <p>Very long text that barely fits</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
         <footer>
             <p>tact &#169; 2026 - &infin; All rights reserved.</p>
         </footer>
+        <script>
+            // Rotate polaroids slightly
+            let gallery = document.getElementById("gallery");
+            let children = gallery.children;
+            for (var i = 0; i < children.length; i++) {
+                let degrees = Math.floor(Math.random() * 10) - 5;
+                children[i].style.rotate = degrees + "deg";
+            }
+        </script>
     </body>
 </html>
