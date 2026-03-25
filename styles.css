@@ -27,7 +27,7 @@ html {
 
 .windowtop-left {
     display: flex;
-    gap: 1rem;
+    gap: .5rem;
 }
 
 .top-icon-image {
@@ -35,6 +35,11 @@ html {
     border: 2px solid white;
     border-radius: 5px;
     height: 20px;
+}
+
+.top-app-image {
+    display: inline;
+    height: 24px;
 }
 
 .push-right {
@@ -150,7 +155,7 @@ section h2 {
 
 .link:hover {
     color: #D96FED;  
-    fill: #D96FED;
+    fill: #141414;
 }
 
 .link svg {
@@ -215,6 +220,12 @@ section h2 {
     .hero-image-container {
         height: 20vh;
         background-size: 1000px;
+    }
+
+    .flex {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
     }
 }
 
