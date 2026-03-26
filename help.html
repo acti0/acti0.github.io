@@ -23,7 +23,7 @@
                 </div>
                 <div class="topnav">
                     <a href="index.html"><u>M</u>ain</a>
-                    <a href="gallery.html"><u>G</u>allery</a>
+                    <a href="gallery.html"><u>P</u>hotos</a>
                     <a href="games.html"><u>G</u>ames</a>
                     <a href="#"><u>R</u>esources</a>
                     <a href="help.html"><u>H</u>elp</a>
@@ -48,7 +48,10 @@
                             <img style="max-height: 200px;" src="img/aggrocrabsealofquality.png" alt="">
                         </div>
                     </div>
-                    <div id="android-banner"></div>
+                    <div class="center-text">
+                        <button id="rotate-button" onclick="setTimeout(rotatePage, 1)" type="button">Flip!</button>
+                    </div>
+                    <div id="android-banner" class="mt"></div>
                 </div>
             </div>
         </div>       
@@ -56,5 +59,18 @@
             <p>tact &#169; 2026 - &infin; All rights reserved.</p>
         </footer>
         <script src="https://keepandroidopen.org/banner.js?size=mini&animation=off&id=android-banner"></script>
+        <script>
+            // Spin the page
+            var degrees = 0;
+            function rotatePage() {
+                degrees = degrees + 10;
+                document.body.style.rotate = degrees + "deg";
+                if (degrees == 360) {
+                    degrees = 0;                      
+                } else {   
+                    setTimeout(rotatePage, 1)
+                }          
+            }
+        </script>
     </body>
 </html>
