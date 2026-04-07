@@ -29,30 +29,38 @@
                 </div>
                 <div class="sub-page-content">
                     <div id="gallery" class="gallery-flex">
-                        <div class="polaroid">
+                        <div class="polaroid" onclick="openModal(this)">
                             <div class="polaroid-trim">
                                 <img src="img/gwynne_head_square.png" alt="">
                             </div>
                             <p>First picture</p>
                         </div>
-                        <div class="polaroid">
+                        <div class="polaroid" onclick="openModal(this)">
                             <div class="polaroid-trim">
                                 <img src="img/gwynne_head_square.png" alt="">
                             </div>
                             <p>text</p>
                         </div>
-                        <div class="polaroid">
+                        <div class="polaroid" onclick="openModal(this)">
                             <div class="polaroid-trim">
                                 <img src="img/gwynne_head_square.png" alt="">
                             </div>
                             <p>text</p>
                         </div>
-                        <div class="polaroid">
+                        <div class="polaroid" onclick="openModal(this)">
                             <div class="polaroid-trim">
                                 <img src="img/gwynne_head_square.png" alt="">
                             </div>
                             <p>Very long text that barely fits</p>
                         </div>
+
+                    </div>
+                    <div id="modal">
+                        <span id="modalClose" onclick="closeModal()">&times;</span>
+                        <img id="modalContent" class="modal-content">
+                        <a id="modalPrev" class="prev" onclick="prevModal()">&#10094;</a>
+                        <a id="modalNext" class="next" onclick="nextModal()">&#10095;</a>
+                        <div id="modalCaption"></div>
                     </div>
                 </div>
             </div>
@@ -68,6 +76,41 @@
                 let degrees = Math.floor(Math.random() * 10) - 5;
                 children[i].style.rotate = degrees + "deg";
             }
+
+            var modalSourceNode;
+            var modal = document.getElementById("modal");
+
+            function openModal(pol) {
+                modalSourceNode = pol;
+
+                // En-/disable navigation to next image
+                document.getElementById("modalPrev").style.display = "block";
+                document.getElementById("modalNext").style.display = "block";
+                if (pol.previousElementSibling == null) {
+                    document.getElementById("modalPrev").style.display = "none";
+                }
+                if (pol.nextElementSibling == null) {
+                    document.getElementById("modalNext").style.display = "none";
+                }
+
+                // Setup dynamic info
+                modal.style.display = "block";
+                document.getElementById("modalContent").src = pol.firstElementChild.firstElementChild.src;
+                document.getElementById("modalCaption").innerHTML = pol.lastElementChild.innerText;
+            }
+
+            function closeModal() {
+                modal.style.display = "none";
+            }
+
+            function prevModal() {
+                openModal(modalSourceNode.previousElementSibling)
+            }
+
+            function nextModal() {
+                openModal(modalSourceNode.nextElementSibling)
+            }
+
         </script>
     </body>
 </html>
