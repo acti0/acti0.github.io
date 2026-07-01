@@ -40,18 +40,26 @@
                         <p>Good day. I am shark</p>
                     </div>
                     <div class="flex">
-                        <div>
-                            <h1>:3</h1>
-                            <p>Your [redacted] ran into a problem and would like to delete. She's asking very nicely to be uninstalled.</p>
+                        <div class="error-window">
+                            <div class="error-windowtop">
+                                ERROR?
+                            </div>
+                            <div class="error-windowcontent">
+                                <h1>:3</h1>
+                                <p>Your <b>[redacted]</b> ran into a problem and would like to delete. She's asking very nicely to be uninstalled.</p>
+                            </div>
                         </div>
-                        <div>
+                        <div style="padding:.5em;">
+                            <img style="max-height: 200px;" src="img/aimi.jpg" alt="">
+                        </div>
+                        <div style="padding:.5em;">
                             <img style="max-height: 200px;" src="img/aggrocrabsealofquality.png" alt="">
                         </div>
                     </div>
                     <div class="center-text">
-                        <button id="rotate-button" onclick="setTimeout(rotatePage, 1)" type="button">Flip!</button>
+                        <button id="rotate-button" onclick="setTimeout(rotatePage, 1)" type="button">Barrel Roll!</button>
                     </div>
-                    <p><b>Disclaimer:</b> If you give proper credit (a link to the source) you are free to repost my work. Do not use it for commercial purposes. Do not modify it. Do not use it with AI in any way.</p>
+                    <p><b>Disclaimer:</b> If you give proper credit (a link to the source) you are free to repost my work. <b>Do not</b> use it for commercial purposes. <b>Do not</b> modify it. <b>Do not</b> use it with AI in any way.</p>
                     <div id="android-banner" class="mt"></div>
                 </div>
             </div>
@@ -64,7 +72,7 @@
             // Spin the page
             var degrees = 0;
             function rotatePage() {
-                degrees = degrees + 10;
+                degrees = degrees + 5;
                 document.body.style.rotate = degrees + "deg";
                 if (degrees == 360) {
                     degrees = 0;                      

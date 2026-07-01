@@ -85,10 +85,11 @@ html {
 body {
     display: flex;
     flex-direction: column;
-    background-color: lightblue;
     margin: 0;
     height: 100%;
     font-weight: 400;
+    background-image: url("img/sheep_bg.jpg");
+    background-size: 100%;
 }
 
 footer {
@@ -423,5 +424,23 @@ h1 {
     background: linear-gradient(90deg, #f00, #ff2b00, #f50, #ff8000, #fa0, #ffd500, #ff0, #d4ff00, #af0, #80ff00, #5f0, #2bff00, #0f0, #00ff2b, #0f5, #00ff80, #0fa, #00ffd5, #0ff, #00d4ff, #0af, #007fff, #05f, #002bff, #00f, #2a00ff, #50f, #7f00ff, #a0f, #d400ff, #f0f, #ff00d4, #f0a, #ff0080, #f05, #ff002b, #f00);
     background-clip: text;
     color: #0000;
+}
+
+.error-window {
+    border: 2px solid red;
+    border-radius: 10px 10px 0 0;
+    margin: auto;
+    background-color: white;
+}
+
+.error-windowtop {
+    background-color: red;
+    padding: .5em 1em;
+    color: white;
+    font-weight: bold;
+}
+
+.error-windowcontent {
+    padding: .5em 1em;
 }
 
